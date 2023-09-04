@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-require_relative '../lib/data_export'
+require_relative '../lib/export_data'
 
 RSpec.describe DataExport::Exporter do
   describe '.export_to_csv' do

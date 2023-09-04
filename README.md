@@ -5,7 +5,7 @@ This gem exports model data into different formats, such as CSV. To achieve so, 
 ## Installation
 
 ```ruby
-gem 'data_export', '~> 0.1.0'
+gem 'export_data', '~> 0.1.0'
 ```
 
 Then, run `bundle install` to install the gem.
@@ -15,7 +15,7 @@ Then, run `bundle install` to install the gem.
 To use the DataExport::Exporter class, follow these steps:
 
 ```ruby
-    require 'data_export'
+    require 'export_data'
     
     # Prepare data
     data = [
@@ -38,7 +38,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/ronakabhattrz/data_export. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/ronakabhattrz/data_export/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/ronakabhattrz/export_data. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/ronakabhattrz/export_data/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
