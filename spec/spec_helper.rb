@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "data_import_export"
+require "data_export"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
