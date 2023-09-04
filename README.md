@@ -15,19 +15,29 @@ Then, run `bundle install` to install the gem.
 To use the DataExport::Exporter class, follow these steps:
 
 ```ruby
-    require 'export_data'
-    
-    # Prepare data
-    data = [
-      { id: 1, name: 'John', age: 30 },
-      { id: 2, name: 'Alice', age: 25 }
-    ]
-    
-    # Create an instance of the exporter
-    exporter = DataExport::Exporter.new
-    
-    # Export data to a CSV file
-    exporter.export_to_csv(data, 'output.csv')
+# Define a sample class that simulates an object to export
+class SampleObject
+  attr_accessor :name, :age
+
+  def initialize(name, age)
+    @name = name
+    @age = age
+  end
+
+  # Define a method to get attributes as a hash
+  def attributes
+    { 'name' => name, 'age' => age }
+  end
+end
+
+# Create an array of sample objects
+sample_objects = [
+  SampleObject.new('Alice', 25),
+  SampleObject.new('Bob', 30)
+]
+
+# Test exporting the objects to a CSV file
+DataExport::Exporter.export_to_csv(sample_objects, 'sample.csv')
 ```
 
 ## Development
