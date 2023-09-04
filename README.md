@@ -1,11 +1,11 @@
-# DataExport
+# ExportData
 
 This gem exports model data into different formats, such as CSV. To achieve so, it uses an export model that handles how the data will be shown
 
 ## Installation
 
 ```ruby
-gem 'export_data', '~> 0.1.0'
+gem 'export_data'
 ```
 
 Then, run `bundle install` to install the gem.
