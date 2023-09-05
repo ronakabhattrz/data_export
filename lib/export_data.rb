@@ -45,5 +45,24 @@ module DataExport
         puts "An error occurred while exporting to CSV: #{e.message}"
       end
     end
+    
+    def self.export_to_text(objects, file_path)
+      begin
+        File.open(file_path, 'w') do |file|
+          if objects.empty?
+            puts 'No objects to export.' # Or handle this case as needed
+            return
+          end
+          
+          # Write the object's attribute values as text lines
+          objects.each do |obj|
+            file.puts(obj.attributes.values.join("\t")) # Use '\t' as a delimiter for tab-separated values
+          end
+        end
+      rescue Errno::ENOENT => e
+        puts "An error occurred while exporting to text: #{e.message}"
+      end
+    end
+    
   end
 end

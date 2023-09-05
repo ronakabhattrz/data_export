@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    export_data (0.2.0)
+    export_data (0.3.0)
 
 GEM
   remote: https://rubygems.org/
