@@ -11,3 +11,5 @@ gem "rspec", "~> 3.0"
 
 gem "rubocop", "~> 1.21"
 gem 'yard'
+gem 'axlsx'
+gem 'roo', '~> 2.0'

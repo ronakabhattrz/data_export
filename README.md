@@ -12,35 +12,59 @@ Then, run `bundle install` to install the gem.
 
 ## Usage
 
-To use the DataExport::Exporter class, follow these steps
-
-Assuming you have 50 `User` records in your database and your User model represents these records, you can follow these steps:
-
-1) Open your Rails console:
+### Exporting Data to CSV
 
 ```ruby
-  rails console
+    require 'data_export_gem'
+    
+    # Prepare data
+    data = [
+      { id: 1, name: 'John', age: 30 },
+      { id: 2, name: 'Alice', age: 25 }
+    ]
+    
+    # Create an instance of the exporter
+    exporter = DataExportGem::Exporter.new
+    
+    # Export data to a CSV file
+    exporter.export_to_csv(data, 'output.csv')
 ```
 
-2) Retrieve the user records from your database:
+### Exporting Data to XLSX
 
 ```ruby
-  users = User.all
+    require 'data_export_gem'
+    
+    # Prepare data
+    data = [
+      { id: 1, name: 'John', age: 30 },
+      { id: 2, name: 'Alice', age: 25 }
+    ]
+    
+    # Create an instance of the exporter
+    exporter = DataExportGem::Exporter.new
+    
+    # Export data to a XLS file
+    exporter.export_to_xls(data, 'output.xls')
 ```
-- This will fetch all the user records from your User model and store them in the users variable.
 
-3) Specify the file path where the CSV file will be saved:
+### Exporting Data to Text
 
 ```ruby
-  file_path = 'users.csv'
+    require 'data_export_gem'
+    
+    # Prepare data
+    data = [
+      { id: 1, name: 'John', age: 30 },
+      { id: 2, name: 'Alice', age: 25 }
+    ]
+    
+    # Create an instance of the exporter
+    exporter = DataExportGem::Exporter.new
+    
+    # Export data to a TXT file
+    exporter.export_to_csv(data, 'output.txt')
 ```
-
-4) Call the `DataExport::Exporter.export_to_csv` method to export the user records to the CSV file:
-
-```ruby
-  DataExport::Exporter.export_to_csv(users, file_path)
-```
-- This line exports the user records in the `users` variable to the specified CSV file.
 
 ## Development
 
