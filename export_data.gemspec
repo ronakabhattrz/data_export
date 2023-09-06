@@ -15,7 +15,6 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 2.6.0"
   
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
-  spec.source = "https://rubygems.org"
   
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/ronakabhattrz/export_data"
