@@ -10,13 +10,12 @@ Gem::Specification.new do |spec|
 
   spec.summary = "A Data Import/Export Gem for Ruby on Rails"
   spec.description = "Simplify data import and export tasks in Rails applications."
-  spec.homepage = "https://github.com/ronakabhattrz/export_data"
+  spec.homepage = "https://rubygems.org/gems/export_data"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
   
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
   
-
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/ronakabhattrz/export_data"
   spec.metadata["changelog_uri"] = "https://github.com/ronakabhattrz/export_data/blob/main/CHANGELOG.md"
