@@ -29,7 +29,7 @@ jobs:
         mkdir -p $HOME/.gem
         touch $HOME/.gem/credentials
         chmod 0600 $HOME/.gem/credentials
-        printf -- "---\n:rubygems_api_key: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
+        printf -- "---\n:rubygems_api_key: rubygems_b21cb5ed3e30a9594c8c6b35819398d4bf49e9676e52812f\n" > $HOME/.gem/credentials
         gem build *.gemspec
         gem push *.gem
       env:
