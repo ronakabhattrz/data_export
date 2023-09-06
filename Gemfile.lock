@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    export_data (0.3.0)
+    export_data (0.4.0)
       axlsx (~> 2.0)
       roo (~> 2.0)
 
